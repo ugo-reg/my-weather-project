@@ -47,9 +47,15 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = `${temperature}`;
 }
+function search(event){
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-input");
+  let cityElement = document.querySelector("#current-city");
+  let city = searchInputElement.value;
+  cityElement.innerHTML = city;
 
-let city = "paris";
-let apiKey = "3ee9046f22cb8dtcf3aa949o097a3347";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiKey = "3ee9046f22cb8dtcf3aa949o097a3347";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
