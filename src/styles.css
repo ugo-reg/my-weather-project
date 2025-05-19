@@ -1,0 +1,53 @@
+body {
+  display: block;
+}
+form {
+  text-align: center;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.sun {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  font-size: 40px;
+  top: -90px;
+}
+
+.body {
+  background-color: rgb(210, 219, 219);
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 550px;
+  border-radius: 10%;
+  margin-top: 70px;
+}
+
+p strong {
+  color: red;
+}
+
+p {
+  font-size: 18px;
+}
+#search {
+  font-size: 20px;
+  height: 45px;
+  border-radius: 5%;
+}
+#search-button {
+  font-size: 15px;
+  color: white;
+  background-color: brown;
+  padding: 15px;
+}
+.bold {
+  font-size: 70px;
+}
